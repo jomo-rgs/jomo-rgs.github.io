@@ -1,0 +1,29 @@
+body {
+    background: #333;
+    color: #fff;
+}
+
+.navbar {
+    opacity: 0.8;
+}
+
+#home-section{
+    margin-top: 75px;
+    /* padding-top: 700; */
+}
+
+#about-section{
+    background-image: url(/IMAG0032.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+
+.dark-overlay {
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+    width: 100%;
+    /* min-height: 900px;  */
+    background: rgba(0,0,0,0.7);
+}

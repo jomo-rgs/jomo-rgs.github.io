@@ -1,60 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
     integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
   <title>JoMo Games - Home</title>
 </head>
+<!-- <div class="container" style="border-style: dotted;">
+  <div class="d-flex flex-column ">
+
+    <div id="slider1" class="carousel slide mb-4" data-ride="carousel" data-interval="5000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block img-fluid" src="/brendan-miranda-652484-unsplash-1080x400.jpg" alt="First Slide" />
+        </div>
+        <div class="carousel-item">
+          <img class="d-block img-fluid" src="/glenn-carstens-peters-204767-unsplash-1080x400.jpg" alt="Second Slide" />
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div> -->
 
 <body>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand float" href="#">
         <img class="w-25" src="logoWhite.png" alt="" />
       </a>
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="/games.html">Games</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <!-- <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li> -->
-      </ul>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggle-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/games.html">Games</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
-  <div class="container">
-    <div class="d-flex flex-column ">
-
-        <div id="slider1" class="carousel slide mb-4" data-ride="carousel" data-interval="5000">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block img-fluid" src="/brendan-miranda-652484-unsplash-1080x400.jpg" alt="First Slide" />
-            </div>
-            <div class="carousel-item">
-              <img class="d-block img-fluid" src="/glenn-carstens-peters-204767-unsplash-1080x400.jpg"
-                alt="Second Slide" />
-            </div>
-          </div>
+  <!-- HOME SECTION -->
+  <header id="home-section">
+    <div id="slider1" class="carousel slide" data-ride="carousel" data-interval="5000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="img-fluid w-100" src="/brendan-miranda-652484-unsplash-1080x400.jpg" alt="First Slide" />
         </div>
-
+        <div class="carousel-item">
+          <img class="img-fluid w-100" src="/glenn-carstens-peters-204767-unsplash-1080x400.jpg" alt="Second Slide" />
+        </div>
       </div>
+    </div>
+
+
+  </header>
+
+  <!-- GAME HEAD -->
+  <section id="game-head-section">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center pt-5">
+          <h1 class="display-4">Games</h1>
+          <blockquote class="blockquote">
+            <p class="mb-0">The only winning move is not to play.</p>
+            <footer class="blockquote-footer">WOPR <cite title="Source Title">WarGames (1983)</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GAME SECTION -->
+  <section id="game-section" class="bg-light text-muted py-5">
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <iframe frameborder="0" src="https://itch.io/embed/261592" width="552" height="167"><a
+              href="https://jomogames.itch.io/moonshine-run">MOONSHINE RUN by jomoGames</a></iframe>
+        </div>
+        <div class="column">
+          <iframe frameborder="0" src="https://itch.io/embed/347087" width="552" height="167"><a
+              href="https://jomogames.itch.io/road-race">Road Race by jomoGames</a></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ABOUT HEAD -->
+  <section id="about-head-section">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center py-5">
+          <h1 class="display-4">About</h1>
+          <blockquote class="blockquote">
+            <p class="mb-0">I believe you have my stapler.</p>
+            <footer class="blockquote-footer">Milton <cite title="Source Title">Office Space (1999)</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about-section" class="bg-light text-muted py-5">
+    <div class="dark-overlay">
+      <div class="home-inner container">
+        <p><br><br>Welcom to JoMo Games!<br><br>
+
+          Founded in 2018, Jomo Games is an small American company headquartered in East Tennessee. Jomo Games is building interactive 
+          entertainment for people of all ages and backgrounds. Jomo Games unilized the Phase framwork in all of it's games. 
+        </p>
+      </p>
+      <p>
+        Thanks for stoping by!!! 
+      </p>
+      <p>
+        JoMo
+      </p>
+
+        <br><br>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright: <a href="http:\\www.jomogames.com">JoMoGames.com</a>
   </div>
-  <div class="container">
+
+  <!-- <div class="container">
     <p class="text-secondary">Welcome to JoMo Games!</p>
-  </div>
-  <nav class="navbar fixed-bottom navbar-dark bg-dark">
+  </div> -->
+  <!-- <nav class="navbar fixed-bottom navbar-dark bg-dark">
     <a href="#" class="navbar-brand"></a>
-  </nav>
+  </nav> -->
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -65,6 +160,10 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
     integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
+
+  <script>
+    $('#year').text(new Date().getFullYear);
+  </script>
 </body>
 
 </html>
